@@ -7,11 +7,11 @@ h1 span {
   font-size: 150%;
   cursor: pointer;
 }
-h1 :hover {
+h1 span:hover {
   color: red;
 }
-@media screen and (max-widht: 600px) {
-  h1 {
+@media screen and (max-width: 600px) {
+  h1 span {
     color: green;
   }
 }
