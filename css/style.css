@@ -19,7 +19,11 @@ h5 {
 }
 
 h6 {
-  font-family: HelveticaNeueLTProMd;
+  font-family: HelveticaNeueLTProMd HelveticaNeueLTProRoman;
+}
+
+h7 {
+  font-family: HelveticaNeueLTProRoman;
 }
 
 * {
@@ -28,9 +32,9 @@ h6 {
 }
 
 header {
-  border: 1px solid red;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
+  padding-bottom: 55vh;
 }
 header h1 {
   font-family: "HelveticaNeueLTProLt";
@@ -39,7 +43,7 @@ header h1 {
   letter-spacing: 0.02em;
   color: #1d1e1f;
   text-align: center;
-  margin-top: 206px;
+  margin-top: 340px;
 }
 header h3 {
   font-family: Merriweather;
@@ -71,6 +75,12 @@ header .button {
   latter-spacing: 0.4em;
   color: #000;
   margin-top: 44px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .button:hover {
+  background-color: #000;
+  color: #fff;
 }
 header nav ul {
   display: -ms-grid;
@@ -92,9 +102,127 @@ header nav ul a {
   letter-spacing: 0.04em;
   color: #989696;
 }
-header nav ul:hover {
+header nav ul a:hover {
   color: #010101;
 }
 header nav ul li.active a {
   color: #010101;
+}
+
+main .about {
+  background-color: #1D1D1D;
+  color: #FEFEFE;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30vw 178px 30vw;
+  grid-template-columns: repeat(2, 30vw);
+  -ms-grid-rows: 276px 178px 276px;
+  grid-template-rows: 276px 276px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 178px;
+  padding-top: 10vh;
+  padding-bottom: 15vw;
+  background: url(../images/1.png) center bottom repeat-x, url(../images/2.png) center bottom repeat-x, #1d1d1d;
+}
+
+main .about > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+main .about > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+main .about > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+main .about > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+main .about .about__item {
+  background-color: #181818;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  padding: 0 1vw;
+}
+main .about .about__item .about__year {
+  font-family: HelveticaNeueLTProRoman;
+  font-size: 48px;
+  color: #fefefe;
+}
+main .about .about__item .about__text {
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  color: #b7b7b7;
+}
+main .people {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+main .people h1 {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+  color: #1d1e1f;
+}
+main .people h3 {
+  font-family: Merriweather-LightItalic;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  color: #898888;
+}
+main .people .mens {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30vw 10px 30vw 10px 30vw;
+  grid-template-columns: repeat(3, 30vw);
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+main .people .mens .people__all img {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .people .mens .people__all .people__work {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 13px;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+main .people .mens .people__all .people__name {
+  margin-top: 20px;
+  font-family: HelveticaNeueLTProMd;
+  font-size: 22px;
+  font-weight: 400;
+  color: #464646;
+}
+main .people .mens .people__all .people__specialization {
+  margin-top: 15px;
+}
+main .people .mens .people__all .people__specialization i {
+  font-size: 15px;
+  color: black;
 }

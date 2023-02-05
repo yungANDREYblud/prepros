@@ -9,15 +9,17 @@ h4
 h5
     font-family: HelveticaNeueLTProLt
 h6
-    font-family: HelveticaNeueLTProMd
+    font-family: HelveticaNeueLTProMd HelveticaNeueLTProRoman
+h7
+    font-family: HelveticaNeueLTProRoman
 
 * 
     margin: 0
     padding: 0
 header
-    border: 1px solid red
-    width: 60%
+    width: 80%
     margin: 0 auto
+    padding-bottom: 55vh
     h1
         font-family: 'HelveticaNeueLTProLt'
         font-size: 44px
@@ -25,7 +27,7 @@ header
         letter-spacing: 0.02em
         color: #1d1e1f
         text-align: center
-        margin-top: 206px 
+        margin-top: 340px 
     h3
         font-family: Merriweather
         font-size: 16px
@@ -49,7 +51,10 @@ header
         latter-spacing: 0.4em
         color: #000
         margin-top: 44px
-        
+        transition: all 1s
+    .button:hover
+        background-color: #000
+        color: #fff
     nav
         ul
             display: grid
@@ -65,10 +70,83 @@ header
                 font-weight: 400
                 letter-spacing: 0.04em
                 color: #989696
-            &:hover
+            a:hover
                 color: #010101
             li.active
                 a
                     color: #010101
-            
+main
+    .about
+        background-color: #1D1D1D
+        color: #FEFEFE
+        display: grid
+        grid-template-columns: repeat(2, 30vw)
+        grid-template-rows: 276px 276px
+        justify-content: center
+        gap: 178px
+        padding-top: 10vh 
+        padding-bottom: 15vw
+        background: url(../images/1.png) center bottom repeat-x, url(../images/2.png) center bottom repeat-x, #1d1d1d
+        .about__item
+            background-color: #181818
+            display: grid
+            align-content: center
+            text-align: center
+            padding: 0 1vw
+            .about__year
+                font-family: HelveticaNeueLTProRoman
+                font-size: 48px
+                color: #fefefe
+            .about__text
+                font-family: Montserrat-Light
+                font-size: 15px
+                color: #b7b7b7
+    .people
+        padding-top: 15vh
+        padding-bottom: 15vh
+        h1
+            font-family: HelveticaNeueLTProLt
+            font-size: 35px
+            font-weight: 400
+            text-align: center
+            color: #1d1e1f
+        h3
+            font-family: Merriweather-LightItalic
+            font-size: 15px
+            font-weight: 300
+            text-align: center
+            color: #898888
+        .mens
+            display: grid
+            grid-template-columns: repeat(3, 30vw)
+            padding-top: 20vh
+            padding-bottom: 20vh
+            gap: 10px
+            justify-content: center
+            justify-content: center
+            align-content: center
+            text-align: center
+            .people__all
+                img
+                    width: 170px
+                    height: 170px
+                    border-radius: 100%
+                    object-fit: cover
+                .people__work
+                    font-family: HelveticaNeueLTProLt
+                    font-size: 13px
+                    font-weight: 400
+                    color: #b3b3b3        
+                .people__name
+                    margin-top: 20px
+                    font-family: HelveticaNeueLTProMd
+                    font-size: 22px
+                    font-weight: 400
+                    color: #464646
+                .people__specialization
+                    margin-top: 15px
+                    i 
+                        font-size: 15px
+                        color: black
 
+        
